@@ -20,13 +20,13 @@ public class JQueryController {
 	@Autowired
 	private IAdminProduitsMetier metier;
 	
-	/*@RequestMapping(value="/index")
+	@RequestMapping(value="/index")
 	public String index(Model model) {
 		model.addAttribute("produit", new Produit());
 		model.addAttribute("produits", metier.listproduits());
 		model.addAttribute("categories" , metier.listCategories());
 		return "produits";
-	}*/
+	}
 	@RequestMapping(value="/page" , method= RequestMethod.GET)
 	public ModelAndView getPage() {
 		ModelAndView view = new ModelAndView("jquery");
